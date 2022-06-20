@@ -18,7 +18,7 @@ const init = () => {
     var requestOptions = {
       method: "GET",
     };
-    fetch(`http://localhost:3000/posts/${cookies.login}`, requestOptions)
+    fetch(`/posts/${cookies.login}`, requestOptions)
       .then((response) => response.json())
       .then((result) => renderProfileContent(result))
       .catch((error) => {
@@ -52,7 +52,7 @@ const init = () => {
         redirect: "follow",
       };
 
-      fetch(`http://localhost:3000/posts/${cookies.login}`, requestOptions)
+      fetch(`/posts/${cookies.login}`, requestOptions)
         .then(() => {
           getProfile();
         })

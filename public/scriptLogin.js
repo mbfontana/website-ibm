@@ -37,7 +37,7 @@ const init = () => {
         redirect: "follow",
       };
 
-      fetch("http://localhost:3000/login", requestOptions)
+      fetch("/login", requestOptions)
         .then((response) => response.json())
         .then((data) => {
           if (data.token != undefined) {
