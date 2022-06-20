@@ -1,0 +1,215 @@
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="/style.css" />
+    <link rel="icon" type="image/x-icon" href="/favicon.ico">
+    <title>IBM - Brasil | IBM</title>
+  </head>
+  <body>
+    <section id="home-page">
+      <header class="home-header">
+        <a href="/"><img
+            class="logo"
+            src="./images/ibm-logo.svg"
+            alt="logo"
+          /></a>
+        <nav>
+          <ul>
+            <li>
+              <a href="#"> Vamos criar </a>
+            </li>
+            <li>
+              <a href="#">
+                Produtos
+                <img
+                  class="arrow-down"
+                  src="./images/arrow-down.svg"
+                  alt="Arrow Down Menu"
+                />
+              </a>
+            </li>
+            <li>
+              <a href="#">
+                Consultoria e servicos
+                <img
+                  class="arrow-down"
+                  src="./images/arrow-down.svg"
+                  alt="Arrow Down Menu"
+                />
+              </a>
+            </li>
+            <li>
+              <a href="#">
+                Tire suas duvidas
+                <img
+                  class="arrow-down"
+                  src="./images/arrow-down.svg"
+                  alt="Arrow Down Menu"
+                />
+              </a>
+            </li>
+            <li>
+              <a href="#">
+                Explore mais
+                <img
+                  class="arrow-down"
+                  src="./images/arrow-down.svg"
+                  alt="Arrow Down Menu"
+                />
+              </a>
+            </li>
+          </ul>
+        </nav>
+        <div class="search-field">
+          <input type="search" placeholder="Procurar" />
+          <a href="#"><img
+              class="lupa"
+              src="./images/lupa.svg"
+              alt="lupa"
+            /></a>
+        </div>
+        <div class="dropdown-acc">
+          <a href="./profile"><img
+              id="account"
+              class="account"
+              src="./images/account.svg"
+              alt="account"
+            /></a>
+          <!-- <div class="dropdown-acc-content">
+            <a href="./src/pages/login/index.html">Minha IBM</a>
+            <a href="#">Inscreva-se</a>
+          </div> -->
+        </div>
+        <a href="#"><img
+            class="hamb-menu"
+            src="./images/hamb-menu.svg"
+            alt="hamburger menu"
+          /></a>
+      </header>
+
+      <section class="first-section">
+        <div class="column-1 teste">
+          <div class="title">Vamos criar algo que mude tudo</div>
+          <div class="btn">
+            <button>Saiba como</button>
+            <img src="./images/arrow-know-more.svg" alt="Flecha Saiba Como" />
+          </div>
+        </div>
+        <div class="column-2 teste">
+          <img src="./images/img1-ad1.png" alt="" />
+        </div>
+      </section>
+
+      <section class="second-section">
+        <div class="column-1">
+          <div class="title">X-Force Threat Intelligence Index</div>
+          <p class="text">
+            Conheça os maiores riscos cibernéticos que as organizações enfrentam
+            na atualidade.
+          </p>
+        </div>
+        <div class="column-2">
+          <button class="btn-1">
+            Mais informacoes sobre os riscos ciberneticos
+            <a href="#"><img
+                src="./images/arrow-right-black.svg"
+                alt="Icone PDF para download"
+              /></a>
+          </button>
+          <button class="btn-2">
+            Faca download do relatorio (4,3MB)
+            <a href="#"><img
+                src="./images/pdf-white.svg"
+                alt="Icone PDF para download"
+              /></a>
+          </button>
+        </div>
+      </section>
+
+      <section id="logged-in" style="display: none">
+        <div class="logged-in-container">
+          <div class="logged-in-container-1">
+            <p>
+              Agora que você está
+              <strong>logado</strong>, selecione uma cripto-moeda:
+            </p>
+          </div>
+          <div class="logged-in-container-2">
+            <p>Valor de mercado em tempo real</p>
+            <select
+              name="cripto-selector"
+              id="cripto-selector"
+              class="cripto-selector"
+            >
+              <option value="BTC" selected>Bitcoin</option>
+              <option value="ETH">Ethereum</option>
+              <option value="BNB">BNB</option>
+              <option value="XRP">XRP</option>
+              <option value="LUNA">Terra</option>
+              <option value="SOL">Solana</option>
+              <option value="ADA">Cardano</option>
+              <option value="AVAX">Avalanche</option>
+              <option value="DOT">Polkadot</option>
+            </select>
+            <div>
+              <strong><p id="priceUSD"></p></strong>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <footer>
+        <div class="column-1 max-col">
+          <div class="title">Saiba mais</div>
+          <ul>
+            <li><a href="#">Produtos</a></li>
+            <li><a href="#">Testes de software</a></li>
+            <li><a href="#">Industrias</a></li>
+            <li><a href="#">Estudos de caso (US)</a></li>
+            <li><a href="#">Dentro da IBM (US)</a></li>
+            <li><a href="#">Financiamento</a></li>
+          </ul>
+        </div>
+        <div class="column-2 max-col">
+          <div class="title">Informacoes para...</div>
+          <ul>
+            <li><a href="#">Desenvolvedores</a></li>
+            <li><a href="#">Parceiros Comerciais</a></li>
+          </ul>
+        </div>
+        <div class="column-3 max-col">
+          <div class="title">Conecte-se conosco</div>
+          <ul>
+            <li><a href="#">IBM Consulting</a></li>
+            <li><a href="#">Suporte</a></li>
+            <li><a href="#">Localize um Parceiro de Negócios</a></li>
+          </ul>
+        </div>
+        <div class="column-4 max-col">
+          <div class="column-4-1">
+            <div class="title">Sobre a IBM</div>
+            <ul>
+              <li><a href="#">Carreiras</a></li>
+              <li><a href="#">Noticias mais recentes</a></li>
+              <li><a href="#">Relação com investidores</a></li>
+              <li><a href="#">Responsabilidade corporativa</a></li>
+              <li><a href="#">Sobre a IBM</a></li>
+              <li><a href="#">100 anos IBM Brasil</a></li>
+            </ul>
+          </div>
+          <div class="column-4-2">
+            <div class="title">Selecione um pais/regiao</div>
+            <select name="country" id="country">
+              <option value="Brazil">Brazil</option>
+              <option value="United States of America">
+                United States of America
+              </option>
+            </select>
+          </div>
+        </div>
+      </footer>
+    </section>
+  </body>
+</html>
