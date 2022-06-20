@@ -8,10 +8,7 @@ const init = () => {
     var requestOptions = {
       method: "GET",
     };
-    const response = await fetch(
-      "http://localhost:3000/getCookies",
-      requestOptions
-    );
+    const response = await fetch("/getCookies", requestOptions);
     const cookies = await response.json();
     return cookies;
   }

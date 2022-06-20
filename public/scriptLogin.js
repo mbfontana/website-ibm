@@ -4,18 +4,6 @@ const init = () => {
   const loginPassword = document.getElementById("login-password");
   const profileLink = document.getElementById("profile-link");
 
-  async function getCookies() {
-    var requestOptions = {
-      method: "GET",
-    };
-    const response = await fetch(
-      "http://localhost:3000/getCookies",
-      requestOptions
-    );
-    const cookies = await response.json();
-    return cookies;
-  }
-
   const successHandler = (data) => {
     submitButton.classList.remove("error");
     submitButton.classList.add("success");
