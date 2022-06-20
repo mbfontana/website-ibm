@@ -8,7 +8,6 @@ app.set("views", "view");
 app.use(express.static("public"));
 app.use(cookieParser());
 app.use(express.urlencoded({ extended: false }));
-app.listen(3000);
 
 app.get("/", async (req, res) => {
   res.render("index");
@@ -75,4 +74,12 @@ app.get("/posts/:login/:query", async (req, res) => {
 
 app.get("/getCookies", async (req, res) => {
   res.json(req.cookies);
+});
+
+app.listen(process.env.PORT || 3000, function () {
+  console.log(
+    "Express server listening on port %d in %s mode",
+    this.address().port,
+    app.settings.env
+  );
 });
