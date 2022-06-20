@@ -1,9 +1,7 @@
 import { MongoClient } from "mongodb";
 
 const uri = process.env.MONGODB_URI;
-const client = new MongoClient(
-  "mongodb+srv://ibm-user:br1suEutVahpO6Q9@ibm-website.uqj6c.mongodb.net/?retryWrites=true&w=majority"
-);
+const client = new MongoClient(uri, { useUnifiedTopology: true });
 
 const generateToken = () => {
   const random = Math.random().toString(36).slice(2);
